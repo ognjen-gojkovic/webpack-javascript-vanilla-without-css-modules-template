@@ -1,0 +1,30 @@
+{
+  "name": "Project-0-webpack-javaScript-vanilla-without-css-modules-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "mkdir dist && touch dist/test.txt",
+    "clean": "rm -r dist/*",
+    "dev": "npm run clean && webpack --mode development --config webpack.dev.js",
+    "start": "webpack-dev-server --mode development --config webpack.dev.js",
+    "build": "npm run clean && webpack --mode production --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
